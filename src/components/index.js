@@ -1,3 +1,3 @@
-import Sweetalert from "./SweetAlert/Sweetalert";
+import Sweetalert from "./Sweetalert/Sweetalert";
 
 export { Sweetalert };

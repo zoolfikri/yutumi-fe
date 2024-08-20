@@ -119,7 +119,7 @@ const PrincipalEdit = () => {
         }
       );
     },
-    [user_data.access_token, router, setError]
+    [user_data.access_token, reset, setError]
   );
 
   const putPrincipal = (post_data) => {

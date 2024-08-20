@@ -1,0 +1,22 @@
+image: atlassian/default-image:2
+
+definitions:
+  services:
+    docker:
+      memory: 2072
+options:
+  docker: true
+pipelines:
+  branches:
+    development:
+      - step:
+          name: Build Docker
+          services:
+            - docker
+          caches:
+          - docker
+          script:
+            - docker login -u $Username_Docker_Hub -p $Password_Docker_Hub
+            - export IMAGE_NAME_LATEST=$Username_Docker_Hub/project-site:yutumi-be-fe
+            - docker build -t $IMAGE_NAME_LATEST .
+            - docker push $IMAGE_NAME_LATEST

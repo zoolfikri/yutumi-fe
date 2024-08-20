@@ -1,0 +1,41 @@
+// Variable overrides
+//
+// If you want to customize your project please add your variables below.
+
+// ------ Sidebar ------
+// $sidebar-width:                            16rem !default;
+// $sidebar-widths: (
+//   sm: 12rem,
+//   lg: 20rem,
+//   xl: 24rem
+// ) !default;
+// $sidebar-narrow-width:                     4rem !default;
+// $sidebar-padding-y:                        $spacer !default;
+// $sidebar-padding-x:                        $spacer !default;
+// $sidebar-color:                            var(--cui-body-color) !default;
+// $sidebar-bg:                               var(--cui-body-bg) !default;
+// $sidebar-transition:                       margin-left .15s, margin-right .15s, box-shadow .075s, transform .15s, width .15s, z-index 0s ease .15s !default;
+// $sidebar-brand-color:                      var(--cui-body-color) !default;
+// $sidebar-brand-bg:                         rgba($black, .2) !default;
+// $sidebar-backdrop-bg:                      $black !default;
+// $sidebar-backdrop-opacity:                 .5 !default;
+// $sidebar-overlaid-box-shadow:              var(--cui-box-shadow) !default;
+
+// ------ Navbar ------
+
+$enable-deprecation-messages: false !default;
+
+// ------ Switch ------
+// $form-switch-color:               rgba($black, .25);
+// $form-switch-width:               2em;
+// $form-switch-padding-start:       $form-switch-width + .5em;
+// $form-switch-bg-image:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>");
+// $form-switch-border-radius:       $form-switch-width;
+// $form-switch-transition:          background-position .15s ease-in-out;
+
+// $form-switch-focus-color:         $input-focus-border-color;
+// $form-switch-focus-bg-image:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-focus-color}'/></svg>");
+
+// $form-switch-checked-color:       $component-active-color;
+// $form-switch-checked-bg-image:    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-checked-color}'/></svg>");
+// $form-switch-checked-bg-position: right center;

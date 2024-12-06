@@ -16,7 +16,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -53,6 +53,7 @@
     "react-imask": "^7.6.1",
     "react-redux": "^9.1.0",
     "react-select": "^5.8.0",
+    "react-select-async-paginate": "^0.7.5",
     "simplebar-react": "^3.2.4",
     "sweetalert2": "^11.4.8",
     "typescript": "5.4.3"

@@ -1,4 +1,4 @@
-import { CVirtualScroller } from "@coreui/react-pro";
+// import { CVirtualScroller } from "@coreui/react-pro";
 import dynamic from "next/dynamic";
 import React, { forwardRef } from "react";
 import { components } from "react-select";

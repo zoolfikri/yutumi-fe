@@ -1,1 +1,59 @@
 // Here you can add other styles
+.btn-toggle {
+  $height: calc(($badge-padding-y-sm * 2) + ($badge-font-size-sm * $btn-line-height) + ($btn-border-width * 2));
+  $width: calc(($height * 2) + 8px);
+
+  $switch-height: calc($height + 8px);
+  $switch-width: $switch-height;
+
+  background-color: $danger;
+  border: $btn-border-width solid $danger;
+  border-radius: $border-radius-pill;
+  color: $badge-color;
+  font-size: $badge-font-size-sm;
+  font-weight: $badge-font-weight;
+  line-height: $btn-line-height;
+  min-height: $height;
+  min-width: $width;
+  padding-block-start: $badge-padding-y-sm;
+  padding-block-end: $badge-padding-y-sm;
+  padding-inline-start: calc($switch-width + $badge-padding-x-sm);
+  padding-inline-end: $badge-padding-x-sm;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: $switch-width;
+    height: $switch-height;
+    background-color: $badge-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: calc($btn-border-width * -1);
+    transform: translate(0, -50%);
+    box-shadow:
+      0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:hover,
+  &:active,
+  &:focus-visible {
+    background-color: $danger;
+    border: $btn-border-width solid $danger;
+    color: $badge-color;
+  }
+
+  &.active {
+    border: $btn-border-width solid $success;
+    background-color: $success;
+    color: $badge-color;
+    padding-inline-start: $badge-padding-x-sm;
+    padding-inline-end: calc($switch-width + $badge-padding-x-sm);
+    &::before {
+      left: unset;
+      right: calc($btn-border-width * -1);
+    }
+  }
+}

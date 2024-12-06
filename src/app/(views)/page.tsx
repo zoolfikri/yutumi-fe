@@ -46,8 +46,8 @@ import {
 } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 
-import WidgetsBrand from './(examples)/widgets/WidgetsBrand'
-import WidgetsDropdown from './(examples)/widgets/WidgetsDropdown'
+import WidgetsBrand from './widgets/WidgetsBrand'
+import WidgetsDropdown from './widgets/WidgetsDropdown'
 
 import avatar1 from '@/public/images/avatars/1.jpg'
 import avatar2 from '@/public/images/avatars/2.jpg'
